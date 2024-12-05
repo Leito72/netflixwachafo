@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+
+<body>
+    <video autoplay muted loop class="mivideo">
+        <source src="FONDO.mp4" type="video/mp4">
+        Tu navegador no soporta HTML5.
+    </video>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h1 class="logo">FILMNITY</h1>
+            <h2>Regístrate</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="text" id="nombre" placeholder="Nombres" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="apellido" placeholder="Apellidos" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Contraseña" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirmPassword" placeholder="Confirma tu contraseña" required>
+                </div>
+                <button type="submit" class="login-button">Crear cuenta</button>
+                <div class="sign-up">
+                    <p>¿Ya tienes cuenta? <a href="formulario.html">Inicia sesión aquí</a></p>
+                </div>
+                <div class="info">
+                    <p>Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.
+                        <a href="#" onclick="mostrarInfo()">Más info.</a>
+                    </p>
+                    <p id="extra-info" style="display: none; font-size: 0.8rem; color: #737373; margin-top: 1rem;">
+                        La información recopilada por Google reCAPTCHA está sujeta a la <a href="https://policies.google.com/privacy"
+                            target="_blank">Política de privacidad</a> y a las
+                        <a href="https://policies.google.com/terms" target="_blank">Condiciones del servicio</a> de Google.
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Mensaje de éxito -->
+<div id="successMessage" class="success-message">
+    ¡Registrado con éxito!
+</div>
+
+
+
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Evita el envío del formulario
+
+        // Obtener los valores del formulario
+        var nombre = document.getElementById('nombre').value;
+        var apellido = document.getElementById('apellido').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var confirmPassword = document.getElementById('confirmPassword').value;
+
+        // Validar que las contraseñas coincidan
+        if (password === confirmPassword) {
+            // Guardar los datos del usuario en localStorage
+            var users = JSON.parse(localStorage.getItem('users')) || []; // Obtener usuarios guardados (si existen)
+            users.push({ email: email, password: password }); // Agregar el nuevo usuario
+            localStorage.setItem('users', JSON.stringify(users)); // Guardar nuevamente en localStorage
+
+            // Mostrar el mensaje de éxito como notificación
+            var successMessage = document.getElementById('successMessage');
+            successMessage.classList.add('show'); // Muestra el mensaje
+
+            // Ocultar el mensaje después de 3 segundos y redirigir
+            setTimeout(function() {
+                successMessage.classList.remove('show'); // Ocultar el mensaje
+                window.location.href = 'formulario.html'; // Redirigir a la página de inicio de sesión
+            }, 1000); // 3 segundos
+        } else {
+            alert('Las contraseñas no coinciden');
+        }
+    });
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<link rel="stylesheet" 
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <i class='bx bxs-movie'></i> Peliculas
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    
+        <ul class="navbar">
+            <li><a href="#inicio" class="inicio-active">Inicio</a></li>
+            <li><a href="#peliculas">Peliculas</a></li>
+            <li><a href="#series">Series</a></li>
+            <li><a href="#nuevainformacion">Informacion</a></li>
+        </ul>
+    
+        <div id="userInfo">
+            <span id="userName"></span> <!-- Aquí se mostrará el nombre -->
+            <a href="formulario.html" id="loginBtn" class="btn">Iniciar sesión</a>
+        </div>
+    </header>
+    
+    
+
+    <section class="inicio swiper" id="inicio">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide conatiner">
+                <img src="hom1.jpg" alt="">
+                <div class="inicio-text">
+                    <span>MARVEL UNIVERSE</span>
+                    <h1>guardians of the galaxy <br> vol 1</h1>
+                    <a href="#" class="btn">Reservar ahora</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+            <!----2-->
+            <div class="swiper-slide conatiner">
+                <img src="home2.jpg" alt="">
+                <div class="inicio-text">
+                    <span>MARVEL UNIVERSE</span>
+                    <h1>End game</h1>
+                    <a href="#" class="btn">Reservar ahora</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+            <!---3-->
+            <div class="swiper-slide conatiner">
+                <img src="home3.jpg" alt="">
+                <div class="inicio-text">
+                    <span>MARVEL UNIVERSE</span>
+                    <h1>THE AMAZING SPIDER-MAN</h1>
+                    <a href="#" class="btn">Reservar ahora</a>
+                    <a href="#" class="play">
+                        <i class='bx bx-play'></i>
+                    </a>
+                </div>
+            </div>
+        
+        </div>
+    
+    <div class="swiper-pagination"></div>
+
+    </section>
+
+    <section class="movies" id="peliculas">
+        <h2 class="heading">disfruta tu semana </h2>
+        <!--movies -->
+        <div class="movies-container">
+            <!--box1-->
+            <div class="box">
+            <div class="box-img">
+                <img src="m1.jpg" alt="">
+            </div>
+            <h3>ANT-MAN</h3>
+            <span>117min | Accion-Aventuras-ciencias ficcion</span>
+        </div>
+        <!--box2-->
+        <div class="box">
+            <div class="box-img">
+                <img src="m2.jpg" alt="">
+            </div>
+            <h3>IRON MAN 3</h3>
+            <span>130min | Cine de superhéroes</span>
+        </div>
+        <!--box3-->
+        <div class="box">
+            <div class="box-img">
+                <img src="m3.jpg" alt="">
+            </div>
+            <h3>THOR - RAGNAROK</h3>
+            <span>130min | Cine de superhéroes</span>
+        </div>
+        <!--box4-->
+        <div class="box">
+            <div class="box-img">
+                <img src="m4.jpg" alt="">
+            </div>
+            <h3> VENGADORES-INFINITY WAR</h3>
+            <span>149min | Cine de superhéroes-Accion-Ciencia ficcion</span>
+        </div>
+        <!--box5-->
+        <div class="box">
+            <div class="box-img">
+                <img src="m5.jpeg" alt="">
+            </div>
+            <h3>BLACK PANTHER</h3>
+            <span>161min | Cine de superhéroes-Accion</span>
+        </div>
+        <!--box6-->
+        <div class="box">
+            <div class="box-img">
+                <img src="m6.jpg" alt="">
+            </div>
+            <h3>BLACK WIDOW</h3>
+            <span>134min | Cine de superhéroes-Accion</span>
+        </div>
+        <!--box7-->
+        <div class="box">
+            <div class="box-img">
+                <img src="m7.jpg" alt="">
+            </div>
+            <h3>DOCTOR STRANGE</h3>
+            <span>126min | Cine de superhéroes-Accion</span>
+        </div>
+        <!--box8-->
+        <div class="box">
+            <div class="box-img">
+                <a href="peliculahulk.html">
+                    <img src="m8.jpg" alt="">
+                </a>
+            </div>
+            <h3>THE INCREDIBLE HULK</h3>
+            <span>126min | Cine de superhéroes-Accion</span>
+        </div>
+        <!--box9-->
+        <div class="box">
+            <div class="box-img">
+                <img src="m9.jpg" alt="">
+            </div>
+            <h3>TRANSFORMERS- LA ERA DE LA EXTINCION</h3>
+            <span>165min | Ciencia ficción Acción</span>
+        </div>
+        <!--box10-->
+        <div class="box">
+            <div class="box-img">
+                <img src="m10.jpg" alt="">
+            </div>
+            <h3>365 DIAS</h3>
+            <span>114min | Drama</span>
+        </div>
+        </div>
+    </section>
+    
+    <section class="coming">
+        <h2 class="heading">MAS ENTRETENIMIENTO </h2>
+        <div class="coming-container swiper">
+            <div class="swiper-wrapper">
+            <!--box1-->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="coming1.jpg" alt="">
+                </div>
+                <h3>JOHN WICK</h3>
+                <span>2HORAS 11min | Accion</span>
+            </div>
+            <!--box2-->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="coming2.jpg" alt="">
+                </div>
+                <h3>DIVERGENTE</h3>
+                <span>139min | Accion-Cienciaficcion</span>
+            </div>
+            <!--box3-->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="coming3.jpeg" alt="">
+                </div>
+                <h3>BAD BOYS</h3>
+                <span>124min | Accion-Comedia</span>
+            </div>
+            <!--box4-->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="coming4.jpg" alt="">
+                </div>
+                <h3>LILO & STITCH</h3>
+                <span>85min | Comedia-drama Aventuras Ciencia ficción</span>
+            </div>
+            <!--box5-->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="coming5.jpg" alt="">
+                </div>
+                <h3>60 MINUTEM</h3>
+                <span>88min | Accion</span>
+            </div>
+            <!--box6-->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="coming6.jpg" alt="">
+                </div>
+                <h3>BUSQUEDA IMPLACABLE 2</h3>
+                <span>98min | Suspenso-Acción </span>
+            </div>
+            <!--box7-->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="coming7.jpg" alt="">
+                </div>
+                <h3>EL REY</h3>
+                <span>140min | Drama historico</span>
+            </div>
+            <!--box8-->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="coming8.jpg" alt="">
+                </div>
+                <h3>TIME IS UP</h3>
+                <span>108min | Romantica-Drama</span>
+            </div>
+            <!--box9-->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="coming9.jpg" alt="">
+                </div>
+                <h3>Mr. & Mrs. SMITH</h3>
+                <span>120min | Comedia-Acción</span>
+            </div>
+            <!--box10-->
+            <div class="swiper-slide box">
+                <div class="box-img">
+                    <img src="coming10.jpg" alt="">
+                </div>
+                <h3>LA NOCHE DEL DEMONIO</h3>
+                <span>102min | Terror</span>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <section class="movies" id="series">
+        <h2 class="heading">Series </h2>
+        <!--movies -->
+        <div class="movies-container">
+            <!--box1-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="The last of us.jpg" alt="">
+                </div>
+                <h3>THE LAST OF US</h3>
+                <span>1 Temporada | Accion-Aventuras-ciencias ficcion</span>
+            </div>
+            <!--box2-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="Daryl Dixon.jpg" alt="">
+                </div>
+                <h3>DARYL DYXON</h3>
+                <span>1 Temporada | Accion-Aventuras-ciencias ficcion</span>
+            </div>
+            <!--box3-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="Arcane.jpg" alt="">
+                </div>
+                <h3>ARCANE</h3>
+                <span>2 Temporadas | Accion-Aventuras-ciencias ficcion</span>
+            </div>
+            <!--box4-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="Futurama.jpg" alt="">
+                </div>
+                <h3> FUTURAMA</h3>
+                <span>12 Temporadas | Comedia-Ciencia ficcion</span>
+            </div>
+            <!--box5-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="Pinguino.jpg" alt="">
+                </div>
+                <h3>PINGUINO</h3>
+                <span>1 Temporada | Suspenso-Acción</span>
+            </div>
+            <!--box6-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="Superman.jpg" alt="">
+                </div>
+                <h3>SUPERMAN&LOIS</h3>
+                <span>4 Temporadas | Cine de superhéroes-Accion</span>
+            </div>
+            <!--box7-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="The office.jpg" alt="">
+                </div>
+                <h3>THE OFFICE</h3>
+                <span>9 Temporadas | Comedia</span>
+            </div>
+            <!--box8-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="Cobra kai.jpg" alt="">
+                </div>
+                <h3>COBRA KAI</h3>
+                <span>6 Temporadas | Acción-Aventura-Drama</span>
+            </div>
+            <!--box9-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="death note (1).jpg" alt="">
+                </div>
+                <h3>DEATH NOTE</h3>
+                <span>1 Temporadas | Drama-Ciencia ficción-Acción</span>
+            </div>
+            <!--box10-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="stranger thins.jpg" alt="">
+                </div>
+                <h3>STRANGER THINGS</h3>
+                <span>4 Temporadas | Drama-Suspenso-Terror</span>
+            </div>
+        </div>
+    </section>
+
+<footer id="nuevainformacion">
+    <p>&copy; 2024 Peliculas | Created by L&L </p>
+    <p>Contact: <a href="mailto:leonnardo.rodriguez@tecsup.edu.pe">leonnardo.rodriguez@tecsup.edu.pe</a></p>
+    <p>Follow us on:
+        <a href="https://www.tiktok.com/es/" target="_blank">Tiktok</a> |
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </p>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
